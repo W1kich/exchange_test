@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/exchange_test/static/css/main.c6566da2.css",
+    "main.js": "/exchange_test/static/js/main.f19cc871.js",
+    "index.html": "/exchange_test/index.html",
+    "main.c6566da2.css.map": "/exchange_test/static/css/main.c6566da2.css.map",
+    "main.f19cc871.js.map": "/exchange_test/static/js/main.f19cc871.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c6566da2.css",
+    "static/js/main.f19cc871.js"
+  ]
+}
