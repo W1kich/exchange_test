@@ -12,21 +12,20 @@ const App = () => {
 	const [exchangeData, setExchangeData] = useState([]);
 
 	useEffect(() => {
-    const apiUrl = 'https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json';
+		const apiUrl = 'https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json';
 
-    const fetchExchangeRates = async () => {
-      try {
-        const data = await fetchData(apiUrl);
-        setExchangeData(data);
-      } catch (error) {
-        console.error('Error in App component:', error);
-      }
-    };
+		const fetchExchangeRates = async () => {
+			try {
+				const data = await fetchData(apiUrl);
+				setExchangeData(data);
+			} catch (error) {
+				console.error('Error in App component:', error);
+			}
+		};
 
-    fetchExchangeRates();
-  }, []);
-	console.log(exchangeData);
-	
+		fetchExchangeRates();
+	}, []);
+
 	return (
 		<div className='app'>
 			<ExchangeRates exchangeData={exchangeData} />
