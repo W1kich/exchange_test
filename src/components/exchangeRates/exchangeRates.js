@@ -7,8 +7,6 @@ const ExchangeRates = ({ exchangeData }) => {
 			<p>{rate.rate.toFixed(2)}</p>
 		</div>
 	))
-	
-	console.log(items);
 
 	return (
 		<header>
